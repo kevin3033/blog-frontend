@@ -1,26 +1,20 @@
-
-
-let bt = document.querySelector("#submit_cadastro")
+let bt = document.querySelector(".submit_login")
 
 bt.addEventListener("click", async () => {
     if (document.querySelector('#usuarioo').value.length < 3) {
         return alert("usuario tem que ter pelo menos 4 caracteres.")
     }
-    // fazer uma verificação básica do email.
-    if (document.querySelector('#emaill').value.length < 1) {
-        return alert("sem email.")
-    }
     if (document.querySelector('#senhaa').value.length < 5) {
         return alert("senha tem que ter pelo menos 5 caracteres.")
     }
-    let novoUsuario = {
+    let velhoUsuario = {
         usuario: document.querySelector('#usuarioo').value,
-        email: document.querySelector('#emaill').value,
         senha: document.querySelector('#senhaa').value
     }
-    await fetch("http://0.0.0.0:3001/api/cadastro", {
+    console.log("hahahaha");
+    await fetch("http://0.0.0.0:3001/api/login", {
         method: "POST",
-        body: JSON.stringify(novoUsuario),
+        body: JSON.stringify(velhoUsuario),
         headers: {
         "Content-Type": "application/json"
         },
@@ -28,14 +22,14 @@ bt.addEventListener("click", async () => {
     }).then(async response => {
         let text = await response.json()
         switch (response.status) {
-            case 201:
-                alert(text)
+            case 202:
+                alert("usuario logado")
                 break;
             case 401:
                 alert(text)
                 break;
             case 500:
-                alert(text)
+                alert("ocorreu um erro no servidor. tente novamente mais tarde.")
                 break;
             default:
                 break;

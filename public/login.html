@@ -13,24 +13,27 @@
     <header id="cabecalho">
         <a href="index.html"><h1 class="cabecalho-logo">seu blog</h1></a>
         <nav id="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="#">opção 1</a>
-            <a class="cabecalho-menu-item" href="#">opção 2</a>
             <a class="cabecalho-menu-item" href="cadastro.html">cadastro</a>
-            <a class="cabecalho-menu-item" href="login.html">login</a>
+            <a class="cabecalho-menu-item" href="#">login</a>
         </nav>
     </header>
 
     <main id="login-tela">
-        <form id="login-tela-form" action="" method="post">
+        <div id="login-tela-form" action="#">
             <h2>bem-vindo de volta!</h2>
             <hr>
-            <h3>seu email:</h3>
-            <input type="email" placeholder="seunome@gmail.com">
+            <h3>seu usuario:</h3>
+            <input placeholder="seunome123" id="usuarioo">
             <h3>sua senha:</h3>
-            <input type="password" placeholder="********">
-            <button type="submit">entrar</button>
-            <a href="cadastro.html">fazer cadastro</a>
-        </form>
+            <input type="password" placeholder="********" id="senhaa">
+            <button class="submit_login">ENTRAR</button>
+            <!--
+            <a href="#">esqueci minha senha</a>
+            -->
+            
+        </div>
     </main>
+
+    <script src="./js/login.js"></script>
 </body>
 </html>
