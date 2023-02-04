@@ -1,4 +1,11 @@
-
+window.onload = () => {
+    let token = JSON.parse(localStorage.getItem("token"))
+    if (token.nome == null) {
+        return
+    } else {
+        return window.location.assign("http://0.0.0.0:3001/index.html")
+    }
+}
 
 let bt = document.querySelector("#submit_cadastro")
 

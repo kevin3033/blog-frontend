@@ -27,3 +27,8 @@
     /*font-family: 'Solway', serif;*/
     color: #ffffff;
 }
+.cabecalho-menu-item:hover {
+    /*font-family: 'Solway', serif;*/
+    color: #ffffff;
+    cursor: pointer;
+}

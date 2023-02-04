@@ -12,8 +12,8 @@ body {
     /*background-image: linear-gradient(to right, #b248c0, #323750);*/
     /*padding: 70px 200px 0 200px;*/
     font-family: 'Solway', serif;
-    padding: 70px 200px 0 200px;
-    background-color: #6d6d6d;
+    padding: 70px 200px 70px 200px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
@@ -23,10 +23,14 @@ input {
 }
 
 #rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     border-top: 0.3px solid #000000;
     padding: 25px;
     text-align: center;
     width: 100%;
     height: 70px;
-    margin: 10px 0 0 0;
+    background-image: linear-gradient(to right, #b248c0, #323750);
+    color: #ffffff;
 }

@@ -1,3 +1,12 @@
+window.onload = () => {
+    let token = JSON.parse(localStorage.getItem("token"))
+    if (token.nome == null) {
+        return
+    } else {
+        return window.location.assign("http://0.0.0.0:3001/index.html")
+    }
+}
+
 let bt = document.querySelector(".submit_login")
 
 bt.addEventListener("click", async () => {
@@ -23,7 +32,13 @@ bt.addEventListener("click", async () => {
         let text = await response.json()
         switch (response.status) {
             case 202:
+                let usuariologado = {
+                    nome: document.querySelector('#usuarioo').value,
+                    token: text
+                }
+                localStorage.setItem("token", JSON.stringify(usuariologado))
                 alert("usuario logado")
+                window.location.assign("http://0.0.0.0:3001/index.html")
                 break;
             case 401:
                 alert(text)

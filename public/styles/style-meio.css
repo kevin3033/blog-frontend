@@ -13,14 +13,16 @@
 }
 
 .conteudo-posts-post {
-    margin: 5px 0 0 0;
-    /*border: 0.1px solid black;*/
-    border-bottom: 0.3px solid #000000;
+    margin: 10px 0 10px 0;
+    border: 0.1px solid black;
+    border-radius: 10px;
+   /* border-bottom: 0.3px solid #000000; */
     width: 500px;
+    padding: 10px;
 }
 
-.conteudo-posts-post-imagem {
-    height: 250px;
+.conteudo-posts-post hr {
+    color: #000000;
 }
 
 #conteudo-aba {
@@ -30,14 +32,19 @@
     border-right: 0.3px solid #000000;
     align-items: center;
 }
-#conteudo-aba-input {
+.conteudo-aba-input {
     background-color: #ffffff;
     border: 0.3px solid #000000;
     width: 90%;
     height: 30px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     padding: 5px;
     font-size: 15px;
+    border-radius: 5px;
 
-
+}
+#botoes-aba {
+    background-image: linear-gradient(to right, #b248c0, #323750);
+    color: #ffffff;
+    cursor: pointer;
 }
