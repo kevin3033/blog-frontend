@@ -1,6 +1,6 @@
 window.onload = () => {
     let token = JSON.parse(localStorage.getItem("token"))
-    if (token.nome == null) {
+    if (token == null) {
         return
     } else {
         return window.location.assign("http://0.0.0.0:3001/index.html")

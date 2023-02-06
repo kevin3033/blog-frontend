@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog - login</title>
+    <title>blog - new_post</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-topo.css">
     <link rel="stylesheet" href="styles/style-baixo.css">
-    <link rel="stylesheet" href="styles/style-login.css">
+
+    <link rel="stylesheet" href="styles/style-npost.css">
 </head>
 <body>
     <header id="cabecalho">
@@ -19,19 +20,16 @@
         </nav>
     </header>
 
-    <main id="login-tela">
-        <div id="login-tela-form" action="#">
-            <h2>bem-vindo de volta!</h2>
+    <main id="npost-tela">
+        <div id="npost-tela-form" action="#">
+            <h2>faça seu novo post</h2>
             <hr>
-            <h3>seu usuario:</h3>
-            <input placeholder="seunome123" id="usuarioo">
-            <h3>sua senha:</h3>
-            <input type="password" placeholder="********" id="senhaa">
-            <button class="submit_login">ENTRAR</button>
-            <!--
-            <a href="#">esqueci minha senha</a>
-            -->
-            
+            <h3>titulo:</h3>
+            <input placeholder="" class="input-titulo" id="tituloo">
+            <h3>descrição:</h3>
+            <input type="text" placeholder="" class="input-texto" id="descricaoo">
+            <button class="submit_login">POSTAR</button>
+      
         </div>
     </main>
 
@@ -39,6 +37,6 @@
         <h3>tenha um bom dia</h3>
     </bottom>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/new-post.js"></script>
 </body>
 </html>

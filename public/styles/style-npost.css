@@ -1,0 +1,65 @@
+#npost-tela {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+#npost-tela-form {
+    height: 400px;
+    width: 500px;
+    background-color: #ffffff;
+    border: 0.3px solid #000000;
+
+    border-radius: 10px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 20px;
+    background-image: linear-gradient(to left, #b248c0, #323750);
+}
+
+#npost-tela-form h2 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#npost-tela-form hr {
+    color: #ffffff;
+}
+
+#npost-tela-form h3 {
+    color: #ffffff;
+}
+.input-titulo {
+    background-color: #ffffff;
+    height: 25px;
+    padding: 5px;
+    font-size: 15px;
+    border: 0.3px solid #000;
+}
+.input-texto {
+    background-color: #ffffff;
+    height: 100px;
+    padding: 5px;
+    font-size: 15px;
+    border: 0.3px solid #000;
+}
+
+#npost-tela-form button {
+    color: #000000;
+    height: 30px;
+    font-size: 20px;
+    width: 50%;
+    background-color: #ffffff;
+    border: 0.3px solid #000000;
+    margin: 10px auto 0 auto;
+    padding: auto;
+}
+
+#npost-tela-form a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px auto 0 auto;
+}
